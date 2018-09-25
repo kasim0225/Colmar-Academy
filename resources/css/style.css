@@ -1,0 +1,585 @@
+/* Universal Styles */
+html {
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
+  background-color: white;
+}
+
+body {
+  line-height: 1.4;
+  letter-spacing: 0.1rem;
+}
+
+.container {
+  margin: auto;
+}
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
+h1{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: 	#696969;
+  font-family: "Sintony", sans-serif;
+}
+
+p{
+  letter-spacing: 0.1rem;
+  line-height: 1.4;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  color: grey;
+  font-family: "Dancing Script"
+}
+
+h2{
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: "Sintony", sans-serif;
+  letter-spacing: 0.1rem;
+  color: 	#696969;
+}
+
+h4{
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: "Sintony", sans-serif;
+  letter-spacing: 0.1rem;
+  color: #708090;
+}
+
+/* Heading */
+
+header .container{
+  display: flex;
+  height: 4rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  font-family: "Sintony", sans-serif;
+}
+
+.logo img{
+  height: 2rem;
+  margin-left: 1.5rem;
+}
+
+header span{
+  color: grey;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  font-family:"Dancing Script", sans-serif;
+}
+
+header strong{
+  color: black;
+}
+
+header .nav-bar{
+  display: flex;
+  padding-right: 1.5rem;
+  font-size: 1rem;
+}
+
+header a{
+  font-family: "Sintony", sans-serif;
+  color: grey;
+}
+
+header ul{
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+
+.nav-bar li{
+  padding-right: 1rem;
+  font-weight: 600;
+  font-family: Helvetica;
+  color: grey;
+}
+
+.nav-bar a:hover{
+  color: #5F9EA0;
+  transition: all 0.1s ease-out;
+}
+
+.mobile-nav{
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  header .container{
+    display: none;
+  }
+  .mobile-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+  }
+
+  .mobile-nav img{
+    opacity: 0.7;
+  }
+
+  .mobile-nav img:hover{
+    opacity: 1;
+    transition: 0.3s ease-out;
+  }
+}
+
+/* Banner */
+
+.banner-section{
+}
+
+.banner-section .container{
+  display: flex;
+  padding: 2rem 1.5rem;
+  background-color:	#F5F5F5;
+}
+
+.banner{
+  width:60%;
+
+}
+
+.banner img{
+  width:100%;
+
+}
+
+.banner-content{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  justify-content:center;
+  padding-left: 1.5rem;
+}
+
+.banner-content p{
+  padding-top: 1.5rem;
+  font-size: 1.5rem;
+
+}
+
+
+.banner-content .button{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin-top: 2rem;
+  padding: 0.5rem 0;
+  border-radius: 0.1rem;
+  border: 0.1rem solid #C0C0C0;
+}
+
+.banner-content .button:hover{
+  transition: all 0.5s ease-out;
+  background-color:	#A9A9A9;
+}
+
+@media only screen and (max-width:600px) {
+  .banner-section .container{
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .banner{
+    width: 100%;
+  }
+
+  .banner-content{
+    width: auto;
+  }
+
+  .banner-content h1{
+    padding: 2rem 1rem;
+  }
+
+  .banner-content p{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .banner-content a{
+    padding-bottom: 2rem;
+  }
+
+}
+
+/* Introduction */
+
+.intro-sec{
+  display: flex;
+}
+
+.left{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  width: 60%;
+}
+
+.main-img{
+  padding-bottom: 2rem;
+}
+
+.main-img img{
+  width: 100%;
+}
+
+.intro-content h2{
+  padding-bottom: 1.5rem;
+}
+
+.intro-content p{
+  padding-bottom: 2rem;
+  width: 90%;
+}
+
+.intro-content span{
+  font-weight: 600;
+  font-family: sans-serif;
+  padding-bottom: 2rem;
+  color:#808080;
+}
+
+.right{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding-top: 2rem;
+}
+
+
+.event{
+  display: flex;
+  border-bottom: 0.1rem solid #B0C4DE;
+  opacity: 0.8;
+}
+
+.event-img{
+  width: 35%;
+  padding: 1rem;
+}
+
+.event-img img{
+  width: 100%;
+  height: auto;
+}
+
+.event-content{
+  display: flex;
+  width: 65%;
+  justify-content: center;
+  flex-direction: column;
+  padding-right: 1.5rem;
+}
+
+.event-content h4{
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing:0.1rem;
+  padding-bottom: 0.5rem;
+  color: #696969;
+}
+
+.event-content p{
+  padding-bottom: 0.5rem;
+  letter-spacing:0.1rem;
+  line-height:1.6;
+}
+
+.event-content a{
+  color: #483D8B;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.event:hover{
+  transition: 800ms linear;
+  opacity: 1;
+}
+
+.mobile-right{
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .right, .left{
+    display: none;
+  }
+
+  .mobile-right{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .event{
+    flex-direction: column;
+  }
+
+  .event-img{
+    width: auto;
+    padding: 1rem;
+  }
+
+  .event-content{
+    padding-left: 1rem;
+  }
+
+  .event-content a{
+    padding-bottom: 3rem;
+  }
+}
+
+
+/*Course Section*/
+
+.course-section{
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F5F5;
+  width: 100%;
+}
+
+.heading h1{
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: grey;
+}
+
+.course-section .container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 4.5rem 2rem 4.5rem;
+}
+
+.course{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  width: 30%;
+  background-color: white;
+  padding-bottom: 1.5rem;
+  opacity: 1;
+}
+
+.course img{
+  height: auto;
+  width:100%;
+  padding-bottom: 1rem;
+}
+
+.course-content h4{
+  padding: 1rem;
+}
+
+.course-content .first{
+  padding: 0.5rem 1rem;
+}
+
+.course-content p{
+  padding-left: 1rem;
+  padding-bottom: 1.5rem;
+}
+.excerpt{
+  margin-bottom: -1.5rem;
+}
+
+.course:hover{
+  transition: 0.5s linear;
+  opacity: 0.7;
+}
+
+.course-content a:hover{
+  color: #5F9EA0;
+  transition: all 0.2s ease-out;
+}
+
+.mobile-course-section{
+  display: none;
+}
+
+ @media only screen and (max-width:600px) {
+   .course-section{
+     display: none;
+   }
+
+   .mobile-course-section{
+     display: flex;
+     background-color:	#F5F5F5;
+     flex-direction:column;
+   }
+
+   .mobile-course-section .course-content{
+     padding: 0.5rem;
+
+   }
+   .mobile-course-section .container{
+     width: 100%;
+     padding-bottom: 2rem;
+   }
+   .mobile-course-section .course-content h4{
+     background-color: lightgrey;
+     padding-left: 1rem;
+     padding-top: 1rem;
+     padding-bottom: 1.5rem;
+     font-family: "Dancing Script", sans-serif;
+   }
+
+ }
+
+/* Exhibit Section*/
+
+.exhibit .heading{
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.exhibit-section .container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+}
+
+.left-section{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.exhibit-section .video{
+  padding: 0 1.5rem;
+}
+
+.exhibit-section video{
+  width: 100%;
+}
+
+.below-video{
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.below-video h4{
+  padding-bottom: 0.5rem;
+}
+
+.below-video p{
+  padding-bottom: 2rem;
+}
+
+.exhibit{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.exhibit-content{
+  display: flex;
+}
+
+.exhibit-img{
+  width: 35%;
+  padding:1rem;
+}
+
+.exhibit-img img{
+  width: 100%;
+  height: auto;
+}
+
+.copy{
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mobile-video{
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .exhibit-section .container{
+    display: none;
+  }
+
+  .exhibit-section{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .exhibit-section .heading{
+    padding: 2rem 0 1rem 0;
+  }
+
+
+  .exhibit-section .mobile-video{
+    display: block;
+    padding-bottom: 1.5rem;
+  }
+
+}
+
+
+footer{
+  display: flex;
+  padding-top:1rem;
+  border-top: 0.1rem solid #B0C4DE;
+  height: 4rem;
+}
+
+footer p{
+  flex-grow: 1;
+  padding-left: 1.5rem;
+}
+
+footer a{
+  line-height: 1.4;
+  font-family: sans-serif;
+  color: grey;
+  padding-right: 1.5rem;
+}
+
+footer a:hover{
+  transition: all 0.5s ease-out;
+  color:	#A9A9A9;
+}
+
+@media only screen and (max-width:600px) {
+  footer span{
+    display: none;
+  }
+
+  footer p{
+    display: inline;
+    text-align: left;
+    padding: 1rem;
+    font-size: 0.7rem;
+  }
+}
